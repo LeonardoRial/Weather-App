@@ -1,0 +1,2 @@
+:root{--font:"Baloo Tamma 2",cursive;--main-colour:#8c4bb4;--secondary-colour:#b48c4b;--ternary-colour:#4bb48c}*{box-sizing:border-box;font-family:var(--font);margin:0;padding:0}body{align-items:center;display:flex;height:100vh;justify-content:center}h1,h2,p{color:var(--main-colour)}.container{background-color:var(--secondary-colour);border-radius:2rem;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(3,1fr);height:80vh;width:60vw}
+/*# sourceMappingURL=style.css.map */

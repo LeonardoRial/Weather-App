@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--secondary-colour);
+  height: 80vh;
+  width: 60vw;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
