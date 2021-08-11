@@ -1,2 +1,2 @@
-// getting locations
+const btn=document.querySelector(".btn"),input=document.querySelector("input"),city=document.querySelector(".city"),temp=document.querySelector(".temp"),humidity=document.querySelector(".humidity"),weather=document.querySelector(".weather");btn.addEventListener("click",(()=>{fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=374fbf091349541b2aefe15b63576863`).then((e=>e.json())).then((e=>{const t=e.main.temp-273.15;city.innerHTML=e.name,temp.innerHTML=`Temperature: ${t.toFixed(1)}&#8451`,humidity.innerHTML=`Humidity: ${e.main.humidity}%`,weather.innerHTML=e.weather[0].description[0].toUpperCase()+e.weather[0].description.slice(1),console.log(e)}))}));
 //# sourceMappingURL=script.js.map
