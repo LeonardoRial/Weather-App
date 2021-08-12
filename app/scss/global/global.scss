@@ -1,13 +1,37 @@
+@use '../mixins/index' as *;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
 }
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+}
 h2 {
   font-size: 3rem;
+  color: var(--main-colour);
+  @include mob(small) {
+    font-size: 2rem;
+  }
 }
 p {
   font-size: 2rem;
   font-weight: 400;
+  color: var(--main-colour);
+  @include mob(small) {
+    font-size: 1.7rem;
+  }
 }
