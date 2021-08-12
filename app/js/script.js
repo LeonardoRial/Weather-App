@@ -8,7 +8,7 @@ const icon = document.querySelector(".icon");
 
 btn.addEventListener("click", () => {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=374fbf091349541b2aefe15b63576863`
+    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=374fbf091349541b2aefe15b63576863`
   )
     .then((response) => response.json())
     .then((data) => {
