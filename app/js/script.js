@@ -19,10 +19,9 @@ function getWeather() {
       humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
       weather.innerHTML = data.weather[0].description;
       icon.style.backgroundImage = `url(https://openweathermap.org/img/wn/${data.weather[0].icon}.png)`;
-      info.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?${data.weather[0].main})`;
-
-      console.log(data);
+      info.style.backgroundImage = `url(https://source.unsplash.com/1024x768/?${data.weather[0].main})`;
     });
+  input.value = "";
 }
 
 btn.addEventListener("click", () => {
